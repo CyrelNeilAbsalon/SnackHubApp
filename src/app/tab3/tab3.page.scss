@@ -1,0 +1,13 @@
+.item ion-thumbnail {
+    min-width: 8rem;    
+    min-height: 8rem;
+    img {
+        max-width: 10rem;    
+        min-width: 10rem;
+    }
+}
+
+.item ion-label {
+    font-size: 12px;
+    padding-left: 30px;
+}

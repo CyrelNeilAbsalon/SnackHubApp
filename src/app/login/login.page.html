@@ -1,0 +1,109 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form ngNativeValidate (submit)="login"($event)>
+    <ion-label>Username</ion-label>
+    <input type="text">
+  </form>
+</ion-content> -->
+
+<!-- <ion-header class="ion-no-border">
+  <ion-toolbar color="warning">
+      <ion-title>SnackHub | Login Form</ion-title>
+  </ion-toolbar> 
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <h1>WELCOME!</h1>
+    <p class="log">Login here first.</p>
+  </div>
+  <form ngNativeValidate (submit)="login($event)" id="form">
+    <ion-list>
+      <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" [(ngModel)]="Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+    </ion-list>
+  <br>
+    <div>
+      <ion-button expand="block" shape="round" padding color="warning" (click)="btnLogin()">Sign In</ion-button>
+      <ion-button expand="block" shape="round" padding color="warning" fill="outline" (click)="formRegister()">Register</ion-button>
+    </div>
+  </form>
+</ion-content> -->
+
+<!-- <div id="header">
+  <h1>WELCOME!</h1>
+  <p class="log">Login here first.</p>
+</div>
+
+<form ngNativeValidate (submit)="login($event)" id="form">
+  <input type="text" name="username" id="username" autocomplete="off" required>
+
+  <input type="text" name="password" id="password" autocomplete="off" required>
+
+  <ion-button color="success" class="login" expand="block" shape="round" type="submit">Login</ion-button>
+</form>
+
+<p>Click 'Sign up' button to<br />Create an Account.</p> -->
+
+<ion-header class="ion-no-border">
+  <ion-toolbar color="warning">
+      <ion-title>SnackHub | Login Form</ion-title>
+  </ion-toolbar> 
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <img src="assets/logo_snack_hub.png" />
+    <h1>WELCOME!</h1>
+    <p class="log">Login here first.</p>
+  </div>
+
+  <ion-card-content>
+    <ion-list>
+      
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input [(ngModel)]="email" type="text"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input [(ngModel)]="password" type="password"></ion-input>
+      </ion-item>
+      
+    </ion-list>
+  </ion-card-content>
+  
+  <ion-button expand="block" shape="round" color="warning" (click)="login()">Login</ion-button>
+
+  <div style="padding: 20px;text-align: center;font-size: 18px;">
+    <a (click)="forgot()">Forgot Password</a>
+    <p style="font-size: 18px;">Don't have an account? <a (click)="register()">Register Now!</a></p>
+  </div>
+
+  <!-- <form ngNativeValidate (submit)="login($event)" id="form">
+    <ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input type="text" name="username" id="username" position="floating" autocomplete="off" [(ngModel)]="username" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" name="password" id="password" position="floating" autocomplete="off" [(ngModel)]="password" required></ion-input>
+  </ion-item>
+  
+    <ion-button color="warning" class="login" expand="block" shape="round" type="submit">Login</ion-button>
+    
+    <ion-button color="warning" class="register" expand="block" shape="round" (click)="formRegister()">Register</ion-button>
+  </form> -->
+</ion-content>

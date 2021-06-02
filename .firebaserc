@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "snackhub-f1b26": {
+      "hosting": {
+        "app": [
+          "snackhub-f1b26"
+        ]
+      }
+    }
+  }
+}

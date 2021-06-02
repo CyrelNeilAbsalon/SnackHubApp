@@ -1,0 +1,7 @@
+{
+  "name": "SnackHubApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

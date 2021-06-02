@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-button (click)="close()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Shopping Cart</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let p of products">
+    <p slot="start">
+      {{ p.count }}x
+    </p>
+    <ion-label>
+      {{ p.title }}
+    </ion-label>
+    <p slot="end">{{ p.price * p.count | currency:'₱ '  }}</p>
+  </ion-item>
+</ion-list>
+</ion-content>
+ 
+<ion-footer>
+    <ion-button expand="block" shape="round" (click)="checkout()" color="tertiary"> Checkout     
+    </ion-button>
+</ion-footer>

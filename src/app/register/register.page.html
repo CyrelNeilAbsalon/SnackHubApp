@@ -1,0 +1,59 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="warning">
+      <ion-title>SnackHub | Register Form</ion-title>
+  </ion-toolbar> 
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <img src="assets/logo_snack_hub.png" />
+    <h1>WELCOME!<br><p class="log">Register here first.</p></h1>
+  </div>
+  <ion-card >
+    <ion-card-content class="ion-padding">
+      <ion-list>
+      
+        <ion-item>
+          <ion-label position="floating">Name</ion-label>
+          <ion-input [(ngModel)]="name" type="text"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input [(ngModel)]="email" type="text"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input [(ngModel)]="password" type="password"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label position="floating">Confirm Password</ion-label>
+          <ion-input [(ngModel)]="confirmPassword" type="password" (ionChange)="checkPassword()"></ion-input>
+          <ion-text *ngIf="password && !passwordMatch" color="danger">Password do not match!</ion-text>
+          <ion-text *ngIf="password && passwordMatch" color="success">Password match!</ion-text>
+        </ion-item>
+        
+      </ion-list>
+    </ion-card-content>
+    
+    <ion-button [disabled]="!passwordMatch" expand="block" shape="round" color="warning" (click)="register()">Register</ion-button>
+  </ion-card>
+  <!-- <form ngNativeValidate (submit)="register($event)" id="form">
+    <ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input type="text" name="username" id="username" position="floating" autocomplete="off" [(ngModel)]="username" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="text" name="password" id="password" position="floating" autocomplete="off" [(ngModel)]="password" required></ion-input>
+    </ion-item>
+  
+    <ion-button color="warning" class="register" expand="block" shape="round" type="submit">Register</ion-button>
+  
+    <ion-button color="warning" class="login" expand="block" shape="round" (click)="formLogin()">Login</ion-button>
+  </form> -->
+
+  <p>Order now! We have delicious Snacks<br />Here in SnackHub App.</p>
+</ion-content>
